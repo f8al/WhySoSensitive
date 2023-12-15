@@ -447,7 +447,8 @@ echo " "
 }
 ### Function to print the results ### END
 
-# Exploit
-echo -e "$GREEN_BOLD[ * ] Checking Login Page:$CLEAR_FONT"; PrintTheResults "${loginpagearray[@]}" | tee -a $folder/$filename;
-echo -e "$GREEN_BOLD[ * ] Checking specific files:$CLEAR_FONT"; PrintTheResults "${filetypesarray[@]}" | tee -a $folder/$filename;
-echo -e "$GREEN_BOLD[ * ] Checking path traversal:$CLEAR_FONT"; PrintTheResults "${dirtravarray[@]}" | tee -a $folder/$filename;
+# run dorks and output to screen
+echo -e "$GREEN_BOLD[ * ] Checking Confidential Files:$CLEAR_FONT";PrintTheResults "${confidentialtypesarray[@]}" | tee -a $folder/$filename;
+echo -e "$GREEN_BOLD[ * ] Checking Confidential Files:$CLEAR_FONT";PrintTheResults "${internaltypesarray[@]}" | tee -a $folder/$filename;
+echo -e "$GREEN_BOLD[ * ] Checking Confidential Files:$CLEAR_FONT";PrintTheResults "${restrictedtypesarray[@]}" | tee -a $folder/$filename;
+echo -e "$GREEN_BOLD[ * ] Checking Confidential Files:$CLEAR_FONT";PrintTheResults "${privilegedtypesarray[@]}" | tee -a $folder/$filename;
