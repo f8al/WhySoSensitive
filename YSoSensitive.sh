@@ -35,7 +35,7 @@ cftdoc="filetype:doc%20%22confidential%22"
 cftdocx="filetype:docx%20%22confidential%22"
 cftppt="filetype:ppt%20%22confidential%22"
 cftxls="filetype:xls%20%22confidential%22"
-cftxlsx="filetype:xlsx%20%22onfidential%22"
+cftxlsx="filetype:xlsx%20%22confidential%22"
 cftpdf="filetype:pdf%20%22confidential%22"
 confidentialtypesarray=($cftdoc $cftdocx $cftppt $cftxls $cftxlsx $cftpdf)
 
@@ -448,7 +448,7 @@ echo " "
 ### Function to print the results ### END
 
 # run dorks and output to screen
-echo -e "$GREEN_BOLD[ * ] Checking Confidential Files:$CLEAR_FONT";PrintTheResults "${confidentialtypesarray[@]}" | tee -a $folder/$filename;
-echo -e "$GREEN_BOLD[ * ] Checking Internal Files:$CLEAR_FONT";PrintTheResults "${internaltypesarray[@]}" | tee -a $folder/$filename;
-echo -e "$GREEN_BOLD[ * ] Checking Restricted Files:$CLEAR_FONT";PrintTheResults "${restrictedtypesarray[@]}" | tee -a $folder/$filename;
-echo -e "$GREEN_BOLD[ * ] Checking privileged Files:$CLEAR_FONT";PrintTheResults "${privilegedtypesarray[@]}" | tee -a $folder/$filename;
+echo -e "$GREEN_BOLD[ * ] Checking For Files Designated "Confidential":$CLEAR_FONT";PrintTheResults "${confidentialtypesarray[@]}" | tee -a $folder/$filename;
+echo -e "$GREEN_BOLD[ * ] Checking For Files Designated "Internal":$CLEAR_FONT";PrintTheResults "${internaltypesarray[@]}" | tee -a $folder/$filename;
+echo -e "$GREEN_BOLD[ * ] Checking For Files Designated "Restricted":$CLEAR_FONT";PrintTheResults "${restrictedtypesarray[@]}" | tee -a $folder/$filename;
+echo -e "$GREEN_BOLD[ * ] Checking For Files Designated "Privileged":$CLEAR_FONT";PrintTheResults "${privilegedtypesarray[@]}" | tee -a $folder/$filename;
