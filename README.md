@@ -14,21 +14,19 @@ or
 bash ./YSoSensitive.sh megacorp.one
 ```
 
-with proxy
+Usage example with proxy:
+--------------
 
 ```
 bash ./YSoSensitive.sh megacorp.one 192.168.1.1 8080
 ```
 
-This will work beatifully on Kali but an ultimately universal way is through Docker. Just run 
+This will work beatifully on any unix with the "bc" package installed, but an ultimately universal way is through Docker. 
 
+Docker usage example:
+---------------
 ```
 docker build -t FOO .
-```
-
-and then run it with your argument for the URL such as this:
-
-```
 docker run -it --rm FOO mysite.com
 ```
 
