@@ -1,7 +1,7 @@
 # WhySoSensitive
 
 
-Based on YSoSensitive.sh by [Ivan Glinkin](https://github.com/ivanglinkin) WhySoSensitive aims to be a 1 stop automated tool for running google dorks specifically for the purposes of finding sensitive files exposed on the web
+Based on FGDS.sh by [Ivan Glinkin](https://github.com/ivanglinkin) WhySoSensitive aims to be a 1 stop automated tool for running google dorks specifically for the purposes of finding sensitive files exposed on the web
 
 Usage example:
 --------------
