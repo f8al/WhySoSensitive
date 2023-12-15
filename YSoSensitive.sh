@@ -382,7 +382,7 @@ else
 	then
 		echo -e "$ORANGE[ ! ] Proxy set to:   $CLEAR_FONT $RED_BOLD$proxyurl Port: $proxyport$CLEAR_FONT"
 	fi
-	echo -e "$ORANGE[ ! ] Output file is saved:    $CLEAR_FONT $RED_BOLD$(pwd)$folder/$filename$CLEAR_FONT"
+	echo -e "$ORANGE[ ! ] Output file is saved:    $CLEAR_FONT $RED_BOLD$(pwd)/$folder/$filename$CLEAR_FONT"
 fi
 
 ### Function to get information about the site ### START
