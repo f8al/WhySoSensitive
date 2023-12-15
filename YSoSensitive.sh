@@ -31,39 +31,39 @@ WHITE=`echo -n '\e[00;37m'`;
 CLEAR_FONT=`echo -n '\e[00m'`;
 
 ## confidential filetypes
-cftdoc="filetype:doc \"confidential\""
-cftdocx="filetype:docx \"confidential\""
-cftppt="filetyoe:ppt \"confidential\""
-cftxls="filetype:xls \"confidential\""
-cftxlsx="filetype:xlsx \"onfidential\""
-cftpdf="filetype:pdf \"confidential\""
+cftdoc="filetype:doc%20%22confidential%22"
+cftdocx="filetype:docx%20%22confidential%22"
+cftppt="filetyoe:ppt%20%22confidential%22"
+cftxls="filetype:xls%20%22confidential%22"
+cftxlsx="filetype:xlsx%20%22onfidential%22"
+cftpdf="filetype:pdf%20%22confidential%22"
 confidentialtypesarray=($cftdoc $cftdocx $cftppt $cftxls $cftxlsx $cftpdf)
 
 ## privileged filetypes
-pftdoc="filetype:doc \"privileged\""
-pftdocx="filetype:docx \"privileged\""
-pftppt="filetyoe:ppt \"privileged\""
-pftxls="filetype:xls \"privileged\""
-pftxlsx="filetype:xlsx \"privileged\""
-pftpdf="filetype:pdf \"privileged\""
+pftdoc="filetype:doc%20%22privileged%22"
+pftdocx="filetype:docx%20%22privileged%22"
+pftppt="filetyoe:ppt%20%22privileged%22"
+pftxls="filetype:xls%20%22privileged%22"
+pftxlsx="filetype:xlsx%20%22privileged%22"
+pftpdf="filetype:pdf%20%22privileged%22"
 privilegedtypesarray=($pftdoc $pftdocx $pftppt $pftxls $pftxlsx $pftpdf)
 
 ## internal filetype
-iftdoc="filetype:doc \"internal use only\""
-iftdocx="filetype:docx \"internal use only\""
-iftppt="filetyoe:ppt \"internal use only\""
-iftxls="filetype:xls \"internal use only\""
-iftxlsx="filetype:xlsx \"internal use only\""
-iftpdf="filetype:pdf \"internal use only\""
+iftdoc="filetype:doc%20%22internal%20use%20only%22"
+iftdocx="filetype:docx%20%22internal%20use%20only%22"
+iftppt="filetyoe:ppt%20%22internal%20use%20only%22"
+iftxls="filetype:xls%20%22internal%20use%20only%22"
+iftxlsx="filetype:xlsx%20%22internal%20use%20only%22"
+iftpdf="filetype:pdf%20%22internal%20use%20only%22"
 internaltypesarray=($iftdoc $iftdocx $iftppt $iftxls $iftxlsx $iftpdf)
 
 ## restricted fyletype
-rftdoc="filetype:doc \"irestricted\""
-rftdocx="filetype:docx \"restricted\""
-rftppt="filetyoe:ppt \"restricted\""
-rftxls="filetype:xls \"restricted\""
-rftxlsx="filetype:xlsx \"restricted\""
-rftpdf="filetype:pdf \"restricted\""
+rftdoc="filetype:doc%20%22restricted%22"
+rftdocx="filetype:docx%20%22restricted%22"
+rftppt="filetyoe:ppt%20%22restricted%22"
+rftxls="filetype:xls%20%22restricted%22"
+rftxlsx="filetype:xlsx%20%22restricted%22"
+rftpdf="filetype:pdf%20%22restricted%22"
 restrictedtypesarray=($rftdoc $rftdocx $rftppt $rftxls $rftxlsx $rftpdf)
 
 ## User-agents
