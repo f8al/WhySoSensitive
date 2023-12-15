@@ -16,12 +16,9 @@ gsite="site:$domain" 		## Google Site
 folder="outputs"		## Output folder name
 
 ## Request the repository
-onlinevar=`curl -s https://raw.githubusercontent.com/f8al/Sensitive-File-Dorks-Scan/master/settings.conf`
+onlinevar=`curl -s https://raw.githubusercontent.com/f8al/WhySoSensitive/master/settings.conf`
 onlineversion=`echo $onlinevar | awk -F\" '{print $2}'`		# Latest version
 onlineupdatedate=`echo $onlinevar | awk -F\" '{print $4}'`	# The date of release
-sponsorstartdate=`echo $onlinevar | awk -F\" '{print $6}'`	# Sponsor start date 
-sponsorenddate=`echo $onlinevar | awk -F\" '{print $8}'`	# Sponsor end date
-sponsordata=`echo $onlinevar | awk -F\" '{print $10}'`		# Sponsor data to be presented
 
 ## Colors
 RED=`echo -n '\e[00;31m'`;
@@ -352,11 +349,11 @@ useragentlength=${#useragentsarray[@]};
 echo -e "";
 echo -e "$ORANGE╔═══════════════════════════════════════════════════════════════════════════╗$CLEAR_FONT";
 echo -e "$ORANGE║\t\t\t\t\t\t\t\t\t    ║$CLEAR_FONT";
-echo -e "$ORANGE║$CLEAR_FONT$GREEN_BOLD\t\t\t    Fast Google Dorks Scan \t\t\t    $CLEAR_FONT$ORANGE║$CLEAR_FONT";
+echo -e "$ORANGE║$CLEAR_FONT$GREEN_BOLD\t\t\t    WhySoSensitive Scan \t\t\t    $CLEAR_FONT$ORANGE║$CLEAR_FONT";
 echo -e "$ORANGE║\t\t\t\t\t\t\t\t\t    ║\e[00m";
 echo -e "$ORANGE╚═══════════════════════════════════════════════════════════════════════════╝$CLEAR_FONT";
 echo -e "";
-echo -e "$ORANGE[ ! ] https://www.linkedin.com/in/IvanGlinkin/ | https://x.com/glinkinivan$CLEAR_FONT";
+echo -e "$ORANGE[ ! ] https://www.linkedin.com/in/SkipCruse/ | https://x.com/SecurityShrimp$CLEAR_FONT";
 
 # Check the version
 checktheversion=$(echo "$version < $onlineversion" | bc -l)
@@ -366,16 +363,6 @@ else
     echo -e "$ORANGE[ ! ] Version: $version (latest)$CLEAR_FONT";
 fi
 echo -e "";
-
-# Sponsor data
-current_timestamp=$(date +%s)
-start_timestamp=$(date -d "$sponsorstartdate" +%s)
-end_timestamp=$(date -d "$sponsorenddate" +%s)
-
-if [ "$current_timestamp" -ge "$start_timestamp" ] && [ "$current_timestamp" -le "$end_timestamp" ]; then
-	echo -e "$BLUE[ ! ] Sponsor: $sponsordata $CLEAR_FONT";
-	echo -e "";
-fi
 
 # Check domain
 if [ -z "$domain" ] 
