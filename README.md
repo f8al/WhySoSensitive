@@ -30,3 +30,11 @@ docker build -t FOO .
 docker run -it --rm FOO mysite.com
 ```
 
+Screenshots:
+---------------
+![](https://github.com/f8al/media/blob/main/WhySoSerious3.png?raw=true)
+
+
+Issues:
+---------------
+- Colors dont properly display in bash on MacOS
