@@ -358,7 +358,7 @@ echo -e "$ORANGE[ ! ] https://www.linkedin.com/in/SkipCruse/ | https://x.com/Sec
 # Check the version
 checktheversion=$(echo "$version < $onlineversion" | bc -l)
 if [ "$checktheversion" -eq 1 ]; then
-    echo -e "$RED_BOLD[ ! ] You current FGDS version ($version) is outdated!\n[ ! ] The latest version is$CLEAR_FONT $GREEN_BOLD$onlineversion $CLEAR_FONT\n$RED_BOLD[ ! ] You can download the latest version by executing the next command:\n[ ! ]$CLEAR_FONT$GREEN_BOLD git clone https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan.git $CLEAR_FONT";
+    echo -e "$RED_BOLD[ ! ] You current WhySoSensitive version ($version) is outdated!\n[ ! ] The latest version is$CLEAR_FONT $GREEN_BOLD$onlineversion $CLEAR_FONT\n$RED_BOLD[ ! ] You can download the latest version by executing the next command:\n[ ! ]$CLEAR_FONT$GREEN_BOLD git clone https://github.com/f8al/WhySoSerious.git $CLEAR_FONT";
 else
     echo -e "$ORANGE[ ! ] Version: $version (latest)$CLEAR_FONT";
 fi
@@ -449,6 +449,6 @@ echo " "
 
 # run dorks and output to screen
 echo -e "$GREEN_BOLD[ * ] Checking Confidential Files:$CLEAR_FONT";PrintTheResults "${confidentialtypesarray[@]}" | tee -a $folder/$filename;
-echo -e "$GREEN_BOLD[ * ] Checking Confidential Files:$CLEAR_FONT";PrintTheResults "${internaltypesarray[@]}" | tee -a $folder/$filename;
-echo -e "$GREEN_BOLD[ * ] Checking Confidential Files:$CLEAR_FONT";PrintTheResults "${restrictedtypesarray[@]}" | tee -a $folder/$filename;
-echo -e "$GREEN_BOLD[ * ] Checking Confidential Files:$CLEAR_FONT";PrintTheResults "${privilegedtypesarray[@]}" | tee -a $folder/$filename;
+echo -e "$GREEN_BOLD[ * ] Checking Internal Files:$CLEAR_FONT";PrintTheResults "${internaltypesarray[@]}" | tee -a $folder/$filename;
+echo -e "$GREEN_BOLD[ * ] Checking Restricted Files:$CLEAR_FONT";PrintTheResults "${restrictedtypesarray[@]}" | tee -a $folder/$filename;
+echo -e "$GREEN_BOLD[ * ] Checking privileged Files:$CLEAR_FONT";PrintTheResults "${privilegedtypesarray[@]}" | tee -a $folder/$filename;
